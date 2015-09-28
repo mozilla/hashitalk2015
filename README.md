@@ -56,7 +56,7 @@
 * Setup an IFTTT recipe which will monitor the status RSS feeds for AWS, and SMS/email/alert you and your team when those RSS feeds get updated.
 * Be sure you have multiple sources watching your apps!
 
-# Load Testing Hints
+# Load Testing Hint
 * Easy 'pound one address' tool:  bees with machineguns  (it's awesome to make an endpoint that exercises the entire app/funnel/workflow that you can then pound on with bees...and the logs are so fun to read)
 
 
@@ -69,4 +69,6 @@
 # Team Hint
 * A Great Intro to 'Gamedays' (The Way to Make Apps and Teams More Resilient by Dylan Richard): https://www.youtube.com/watch?v=LCZT_Q3z520  
 
+# A hint from @rhelmer
+ABCD:  ALWAYS BE CHECKING DATADOG
 
