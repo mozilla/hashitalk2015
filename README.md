@@ -7,9 +7,11 @@
 
 
 # Code Examples We Use
-* Our terraform code
-* Our puppet code
-* Our rustic deployment scripts
+* Our Terraform code: https://github.com/mozilla/socorro-infra/blob/master/terraform
+* Our Puppet code: https://github.com/mozilla/socorro-infra/blob/master/puppet
+* Our rustic deployment script: https://github.com/mozilla/socorro-infra/blob/master/bin/deploy-socorro.sh
+* Our Packer code: https://github.com/mozilla/socorro-infra/blob/master/packer
+* Our user data code: https://github.com/mozilla/socorro-infra/blob/master/terraform/webapp/socorro_role.sh
 
 
 # Some of our example public dashboards / metrics 
@@ -31,8 +33,8 @@
 * You *do* get SSL with S3, but not on http endpoints.  ( Here, have this page explain it to you...it's a little weird.  http://docs.aws.amazon.com/general/latest/gr/rande.html )
 * Otherwise, use SSL in cloudfront.  Use the old IAM tools to upload it...
 
-# AWS Hints
-* Our naming standards for AWS infrastructure: https://dl.dropboxusercontent.com/u/2273146/aws-naming-conventions.txt
+# Other AWS Hints
+* Our naming standards for AWS infrastructure(do this ASAP!): https://dl.dropboxusercontent.com/u/2273146/aws-naming-conventions.txt
 * When given a choice, download/request your SSL certs in Apache format.  This goes right up to AWS easily.
 
 **iam-servercertupload -b ./mysite.crt  -k ./mysite.key -c ./intermediatechain.crt -p /cloudfront/ -s mysite-2015-09-25**
